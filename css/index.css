@@ -100,7 +100,11 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   z-index: 2;
+  background-color: var(--white);
+  height: 5rem;
+  width: 100%;
 }
 /* background, hands and logo ************* */
 .header_images {
