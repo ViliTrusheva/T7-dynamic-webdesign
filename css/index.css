@@ -38,6 +38,16 @@ nav {
   height: 5rem;
   width: 100%;
 }
+/* section / articles------------------------------------------------- */
+section {
+  margin: 8rem 10rem;
+}
+.article_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5rem;
+}
 /* background, hands and logo ************* */
 .header_images {
   position: relative;

@@ -31,6 +31,11 @@ function showProduct(product) {
     ".products .product_price"
   ).textContent = `${product.Price}  DKK`;
 
+  // clone.querySelector(
+  //   ".products a"
+  // ).href = `product.html?q={%22_id%22%20:%20%22${product._id}%22}`
+  clone.querySelector(".products a").href = `product.html?id=${product._id}`;
+
   clone.querySelector(".products img").src = product.img_link;
 
   const parent = document.querySelector("#product_list");

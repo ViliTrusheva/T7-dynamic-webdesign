@@ -15,9 +15,6 @@
 
 <body>
     <header>
-
-    </header>
-    <main>
         <section id="go_back">
             <div>
                 <p><a href="index.html">HOME &#8594</a></p>
@@ -26,6 +23,9 @@
                 <p><a href="javascript:history.back()">PRODUCT LIST</a></p>
             </div>
         </section>
+    </header>
+    <main>
+
         <!-- //////////////////////////////////SIDE MENU////////////////////////////////// -->
         <section id="side_menu">
             <div id="side_menu_gender">
@@ -34,14 +34,48 @@
             </div>
             <div id="side_menu_category">
                 <ul>
+                    <!-- ///////////Bikini////////// -->
                     <li>
-                        Bikini <span>></span>
+                        <div class="option">
+                            <input type="radio" id="bikini" name="category" value="HTML">
+                            <label for="bikini">Bikini <span>></span></label><br>
+                        </div>
+                        <div class="order_type_menu deep_menu">
+                            <p>Order Type</p>
+                            <input type="radio" id="all" name="OrderType" value="HTML" checked>
+                            <label for="all">All</label><br>
+                            <input type="radio" id="ready" name="OrderType" value="HTML">
+                            <label for="ready">Ready to ship</label><br>
+                            <input type="radio" id="rent" name="OrderType" value="HTML">
+                            <label for="rent">Rent</label><br>
+                            <input type="radio" id="subscribe" name="OrderType" value="HTML">
+                            <label for="subscribe">Subscription</label><br>
+                        </div>
+                        <div class="style_type_menu deep_menu">
+                            <p>Style</p>
+                            <input type="checkbox" id="american" name="OrderType" value="HTML">
+                            <label for="american">American</label><br>
+                            <input type="checkbox" id="russian" name="OrderType" value="HTML">
+                            <label for="russian">Russian</label><br>
+                        </div>
+                        <div class="cap-size_menu deep_menu">
+                            <p>Cup size</p>
+                            <input type="checkbox" id="c" name="OrderType" value="HTML">
+                            <label for="c">C</label><br>
+                            <input type="checkbox" id="d" name="OrderType" value="HTML">
+                            <label for="d">D</label><br>
+                        </div>
+
                     </li>
+                    <!-- ///////////shoes////////// -->
                     <li>
-                        Shoes <span>></span>
+                        <input type="radio" id="shoes" name="category" value="HTML">
+                        <label for="shoes">Shoes <span>></span></label><br>
                     </li>
+                    <!-- ///////////accesories////////// -->
                     <li>
-                        Accesories <span>></span>
+                        <input type="radio" id="Accesories" name="category" value="HTML">
+                        <label for="Accesories">Accesories <span>></span></label><br>
                     </li>
                 </ul>
             </div>
@@ -50,14 +84,16 @@
         <section id="product_list">
             <template>
                 <article class="products">
-                    <img src="https://relaxed-phoenix-50a739.netlify.app/bikini_close_1.jpg" alt="Product picture">
+                    <a href=""><img src="https://relaxed-phoenix-50a739.netlify.app/bikini_close_1.jpg"
+                            alt="Product picture"></a>
+
                     <p class="product_name">PRODUCT NAME</p>
                     <p class="product_price">999$</p>
                 </article>
             </template>
         </section>
     </main>
-    <script src="/js/product_list.js"></script>
+    <script src="/js/shop.js"></script>
 </body>
 
 </html>
