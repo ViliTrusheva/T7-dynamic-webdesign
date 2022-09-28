@@ -37,6 +37,9 @@ section {
   margin-bottom: 5rem;
 }
 /* background, hands and logo ************* */
+#logo_in_nav {
+  display: none;
+}
 .header_images {
   position: relative;
 }

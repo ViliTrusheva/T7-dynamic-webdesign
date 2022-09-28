@@ -8,7 +8,7 @@ function scrollFunction() {
     document.body.scrollTop > 250 ||
     document.documentElement.scrollTop > 250
   ) {
-    document.getElementById("logo_header_img").style.width = "5rem";
+    document.getElementById("logo_header_img").style.width = "7rem";
     document.getElementById("logo").style.top = "20px";
   } else {
     document.getElementById("logo_header_img").style.width = "17rem";
