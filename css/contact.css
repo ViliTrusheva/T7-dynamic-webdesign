@@ -1,0 +1,42 @@
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:placeholder-shown {
+  border: 1px solid black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  justify-items: center;
+  align-content: center;
+  margin: 30px;
+}
+
+.contact-form-line {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 10px;
+  margin-top: 10px;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}

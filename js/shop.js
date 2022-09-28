@@ -27,9 +27,7 @@ function showProduct(product) {
   const template = document.querySelector("#product_list template").content;
   const clone = template.cloneNode(true);
   clone.querySelector(".products .product_name").textContent = product.Bikini;
-  clone.querySelector(
-    ".products .product_price"
-  ).textContent = `${product.Price}  DKK`;
+  clone.querySelector(".products .product_price").textContent = `${product.Price}  DKK`;
 
   // clone.querySelector(
   //   ".products a"

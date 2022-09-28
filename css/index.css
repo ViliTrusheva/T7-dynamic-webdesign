@@ -26,18 +26,6 @@ header {
   margin: 0 auto;
 }
 
-nav {
-  margin: auto;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  z-index: 2;
-  background-color: var(--white);
-  height: 5rem;
-  width: 100%;
-}
 /* section / articles------------------------------------------------- */
 section {
   margin: 8rem 10rem;

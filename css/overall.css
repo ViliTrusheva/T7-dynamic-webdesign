@@ -75,6 +75,25 @@ a {
   margin-right: 10px;
 }
 
+/* NAV BAR----------------------------------------------------------- */
+nav {
+  margin: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: var(--white);
+  height: 5rem;
+  width: 100%;
+}
+
+#nav-menu,
+#nav-icons {
+  margin: 30px;
+}
+
 /* Additional design------------------------------------------------- */
 body::-webkit-scrollbar {
   width: 1em;

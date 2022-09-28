@@ -1,8 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const productNum = urlParams.get("id");
 console.log(productNum);
-const url =
-  "https://kea22-427f.restdb.io/rest/bikinis?q={%22_id%22%20:%20%22${productNum}%22}";
+const url = "https://kea22-427f.restdb.io/rest/bikinis/" + productNum;
 
 //thats example from first database assignment
 //const url = `https://kea-alt-del.dk/t7/api/products/${productNum}`;
@@ -23,7 +22,7 @@ fetch(url, options)
     return response.json();
   })
   .then(function (data) {
-    dataReceived(data);
+    showProduct(data);
   });
 
 function dataReceived(data) {
@@ -35,13 +34,10 @@ function dataReceived(data) {
 function showProduct(product) {
   const template = document.querySelector("#choosen_product template").content;
   const clone = template.cloneNode(true);
-  clone.querySelector(".product_details .product_name").textContent =
-    product.Bikini;
-  clone.querySelector(
-    ".product_details .product_price"
-  ).textContent = `${product.Price}  DKK`;
+  clone.querySelector(".product_details .product_name").textContent = product.Bikini;
+  clone.querySelector(".product_details .product_price").textContent = `${product.Price}  DKK`;
 
-  clone.querySelector(".product_details img").src = product.img_link;
+  clone.querySelector(".products img").src = product.img_link;
 
   const parent = document.querySelector("main");
   parent.appendChild(clone);

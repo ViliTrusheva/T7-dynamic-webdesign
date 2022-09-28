@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="css/overall.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Stardust Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="nav-logo">
+          <a href="index.html"><img src="" alt="logo image" /></a>
+        </div>
+        <div id="menu">
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+        </div>
+        <div id="icons">
+          <img src="graphics/shopping-bag.svg" alt="Cart image" />
+          <img src="graphics/heart.svg" alt="heart image" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form method="get" class="contact-form">
+        <div class="contact-form">
+          <div class="contact-form-line">
+            <label for="name">Enter your name: </label>
+            <input type="name" name="name" id="name" placeholder="Anne Jensen" required />
+          </div>
+
+          <div class="contact-form-line">
+            <textarea name="message"></textarea>
+          </div>
+
+          <div class="contact-form-line">
+            <label for="city">Select your city: </label>
+            <select name="city">
+              <option>Copenhagen</option>
+              <option>Århus</option>
+              <option>Odense</option>
+            </select>
+          </div>
+
+          <div class="contact-form-line">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required />
+          </div>
+
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
