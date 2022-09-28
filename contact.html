@@ -23,8 +23,8 @@
           <a href="index.html"><img src="" alt="logo image" /></a>
         </div>
         <div id="menu">
-          <a href="shop.html">Shop</a>
-          <a href="about.html">About</a>
+          <a href="shop.html">SHOP</a>
+          <a href="about.html">ABOUT</a>
         </div>
         <div id="icons">
           <img src="graphics/shopping-bag.svg" alt="Cart image" />
@@ -34,7 +34,13 @@
     </header>
 
     <main>
-      <form method="get" class="contact-form">
+      <form
+        action="thanks.html"
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        class="contact-form"
+      >
         <div class="contact-form">
           <div class="contact-form-line">
             <label for="name">Enter your name: </label>
@@ -62,6 +68,8 @@
           <button type="submit">Submit</button>
         </div>
       </form>
+
+      <script src="js/contact.js"></script>
     </main>
   </body>
 </html>
